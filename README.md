@@ -14,7 +14,7 @@ Mobile버전: Width ~767px
 
 Cross Browsing: IE8+, Chrome, FireFox, Opera, Safari
 
-사용언어: HTML5, CSS3, JavaScript(J-Query, fullPage)
+사용언어: HTML5, CSS3, JavaScript(J-Query, fullPage, bxSlider)
 
 이미지 작업: Adobe Photoshop, Adobe Illustrator, Adobe Lightroom
 

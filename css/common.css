@@ -1,5 +1,15 @@
 @charset "utf-8";
 /* base */
+@font-face {
+    font-family: 'JuA';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url('../font/JuA.woff2') format('woff2'), 
+        url('../font/JuA.woff') format('woff'),
+        url('../font/JuA.ttf') format('truetype'),
+        url('../font/JuA.eot') format('embedded-opentype');
+}
 body{
     font-family: 'Jua', sans-serif;
     color: #000;
@@ -8,9 +18,6 @@ body{
 a{
     text-decoration: none;
     color: #000;
-}
-svg{
-    height: 100%;
 }
 img{
     vertical-align: top;
@@ -58,7 +65,7 @@ img{
     box-sizing: border-box;
 }
 .m_logo>a{
-    display: block;
+    display: inline-block;
     height: 80px;
 }
 .m_logo>a>span{
@@ -68,6 +75,10 @@ img{
     margin-right: 10px;
     vertical-align: middle;
     font-size: 36px;
+}
+.m_logo>a>span>svg{
+    width: 80px;
+    height: 100%;
 }
 #m_gnb_wrap{
     position: absolute;
@@ -86,6 +97,9 @@ img{
 #m_gnb_wrap>ul>li.m_gnb_active{
     transform-origin: bottom right;
     transform: translate(-30px,-36px) rotateZ(-90deg);
+}
+#m_gnb_wrap>ul>li:last-child.m_gnb_active{
+    margin-left: -72px;
 }
 #m_gnb_wrap>ul>li>a{
     transition: 0.4s linear;
