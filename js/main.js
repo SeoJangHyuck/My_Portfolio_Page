@@ -1,4 +1,5 @@
 $(function(){
+    // Fullpage
     $("#m_content_box").fullpage({
         menu: "#m_gnb_wrap",
         anchors:["m_home","m_profile","m_ability","m_portfolio"],
@@ -42,9 +43,19 @@ $(function(){
         }
     });
 
+    // bxSlider
     $(".m_slider").bxSlider({
         maxSlides: 2,
         minSlides: 1,
         moveSlides: 1
+    });
+    $(".m_slider_page3>div>p>em>button").click(function(){
+        var portModal = $(this).attr("class");
+        $(".m_portfolio_modal").children("."+portModal).addClass("m_profile_active");
+        $(".m_portfolio_modal").fadeIn(400);
+    });
+    $(".m_portfolio_modal>div>button").click(function(){
+        $(this).parent().removeClass("m_profile_active");
+        $(".m_portfolio_modal").fadeOut(400);
     });
 }); //End

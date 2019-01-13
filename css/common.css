@@ -18,6 +18,10 @@ body{
 a{
     text-decoration: none;
     color: #000;
+    transition: 0.3s;
+}
+a:hover, a:focus{
+    color: #e9a38b;
 }
 img{
     vertical-align: top;
