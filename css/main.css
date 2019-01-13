@@ -425,13 +425,22 @@
     bottom: 60px;
     left: 100px;
     transform: rotateZ(15deg);
+    transition: 0.8s;
+}
+.m_portfolio_box>img:nth-of-type(1).m_portfolio_active{
+    transform: rotateZ(30deg);
 }
 .m_portfolio_box>img:nth-of-type(2){
     bottom: 60px;
     right: 340px;
     transform: rotateZ(-20deg);
+    transition: 0.8s;
+}
+.m_portfolio_box>img:nth-of-type(2).m_portfolio_active{
+    transform: rotateZ(-30deg);
 }
 .m_portfolio_box>img:nth-of-type(3){
+    z-index: -1;
     bottom: 200px;
     right: 25px;
 }

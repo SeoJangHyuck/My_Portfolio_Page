@@ -50,7 +50,7 @@ $(function(){
         moveSlides: 1
     });
 
-    // Main Modal
+    // Profile
     $(".m_slider_page3>div>p>em>button").click(function(){
         var porModal = $(this).attr("data-pm");
         $("."+porModal).addClass("m_profile_active");
@@ -59,6 +59,16 @@ $(function(){
     $(".m_profile_modal>div>button").click(function(){
         $(this).parent().removeClass("m_profile_active");
         $(".m_profile_modal").fadeOut(400);
+    });
+
+    // Portfolio
+    $(".m_portfolio_box").mouseover(function(){
+        $(".m_portfolio_box>img").eq(0).addClass("m_portfolio_active");
+        $(".m_portfolio_box>img").eq(1).addClass("m_portfolio_active");
+    });
+    $(".m_portfolio_box").mouseout(function(){
+        $(".m_portfolio_box>img").eq(0).removeClass("m_portfolio_active");
+        $(".m_portfolio_box>img").eq(1).removeClass("m_portfolio_active");
     });
     $(".m_portfolio_index>li>a").click(function(){
         var portModal = $(this).attr("data-pm");
