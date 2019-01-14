@@ -485,7 +485,7 @@
 .m_pm_box>div{
     display: none;
     position: absolute;
-    top: 160px;
+    top: 150px;
     left: 0px;
     width: 100%;
     padding: 40px 20px;
@@ -524,12 +524,17 @@
     right: 0px;
 }
 .m_pm_tp>.m_pm_img{
-    margin-top: 120px;
+    margin-top: 40px;
 }
 .m_pm_tp>.m_pm_img>img{
     float: left;
     position: static;
     width: 50%;
+}
+.m_pm_tp>.m_pm_img>img:nth-of-type(3){
+    position: absolute;
+    top: 160px;
+    left: 168px;
 }
 .m_pm_con{
     width: 45%;

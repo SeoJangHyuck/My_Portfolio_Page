@@ -1,1 +1,13 @@
 @charset "utf-8";
+
+/* Tablet 768px ~ 1259px */
+@media all and (min-width: 768px) and (max-width: 1259px){
+
+}
+/* Tablet End */
+
+/* Mobile 768px ~ 1259px */
+@media all and (max-width: 767px){
+    
+}
+/* Mobile End */

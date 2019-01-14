@@ -1,1 +1,38 @@
 @charset "utf-8";
+
+/* Tablet 768px ~ 1259px */
+@media all and (min-width: 768px) and (max-width: 1259px){
+    /* Base */
+    .m_center{
+        margin: 0px;
+        padding: 0px 10px;
+    }
+    body{
+        font-size: 2.4vw;
+    }
+
+    /* Header */
+    .m_logo>a{
+        height: 7.2vw;
+    }
+    .m_logo>a>span{
+        line-height: 7.2vw;
+        font-size: 3.2vw;
+    }
+    .m_logo>a>span>svg{
+        width: 7.2vw;
+    }
+    #m_gnb_wrap{
+        display: none;
+    }
+    #m_mgnb_wrap{
+        display: block;
+    }
+}
+/* Tablet End */
+
+/* Mobile 768px ~ 1259px */
+@media all and (max-width: 767px){
+    
+}
+/* Mobile End */
