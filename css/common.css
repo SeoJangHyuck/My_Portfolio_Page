@@ -13,7 +13,7 @@
 body{
     font-family: 'Jua', sans-serif;
     color: #000;
-    font-size: 24px;
+    font-size: 22px;
 }
 a{
     text-decoration: none;
@@ -68,6 +68,10 @@ img{
     padding: 40px 20px 0px;
     box-sizing: border-box;
 }
+#m_hd.m_header_active{
+    position: absolute;
+    z-index: -1;
+}
 .m_logo>a{
     display: inline-block;
     height: 80px;
@@ -76,12 +80,10 @@ img{
     display: inline-block;
     height: 100%;
     line-height: 80px;
-    margin-right: 10px;
     vertical-align: middle;
     font-size: 36px;
 }
 .m_logo>a>span>svg{
-    width: 80px;
     height: 100%;
 }
 #m_gnb_wrap{

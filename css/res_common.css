@@ -5,13 +5,16 @@
     /* Base */
     .m_center{
         margin: 0px;
-        padding: 0px 10px;
+        padding: 2vw;
     }
     body{
-        font-size: 2.4vw;
+        font-size: 2.2vw;
     }
 
     /* Header */
+    #m_hd{
+        padding-top: 20px;
+    }
     .m_logo>a{
         height: 7.2vw;
     }
@@ -19,20 +22,154 @@
         line-height: 7.2vw;
         font-size: 3.2vw;
     }
-    .m_logo>a>span>svg{
-        width: 7.2vw;
+    #m_gnb_wrap{
+        display: none;
+    }
+    #m_mgnb_wrap{
+        display: block;
+        position: fixed;
+        top: -11vw;
+        right: 20px;
+        width: 15vw;
+        height: 20vw;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+    #m_mgnb_wrap.m_gnb_active{
+        top: 4vw;
+    }
+    #m_mgnb_wrap>button{
+        position: absolute;
+        bottom: -0px;
+        left: 0px;
+        width: 100%;
+        height: 5vw;
+        line-height: 5vw;
+        padding: 0px 20% 0px 0px;
+        border: none;
+        box-sizing: border-box;
+        background: transparent url(../img/common/menu_roll.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+    }
+    #m_mgnb_wrap>ul{
+        position: absolute;
+        top: 20vw;
+        right: 0px;
+        width: 85%;
+        height: 90%;
+        border: 3px solid #000;
+        border-radius: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #fff;
+        transition: 0.4s;
+        opacity: 0;
+    }
+    #m_mgnb_wrap>ul.m_gnb_active{
+        top: 0px;
+        opacity: 1;
+    }
+    #m_mgnb_wrap>ul>li{
+        height: 20%;
+        line-height: calc((20vw - 6px)/5);
+        margin: 2.5% 0px;
+    }
+    #m_mgnb_wrap>ul>li>a{
+        transition: 0.4s;
+    }
+    #m_mgnb_wrap>ul>li.m_gnb_active>a{
+        color: #e9a38b;
+    }
+}
+/* Tablet End */
+
+/* Mobile ~ 767px */
+@media all and (max-width: 767px){
+    /* Base */
+    .m_center{
+        margin: 0px;
+    }
+    body{
+        font-size: 3.6vw;
+    }
+    .section{
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+
+    /* Header */
+    #m_hd{
+        padding: 10px;
+        width: initial;
+    }
+    .m_logo>a{
+        height: 13vw;
+    }
+    .m_logo>a>span{
+        line-height: 13vw;
+        font-size: 4.8vw;
     }
     #m_gnb_wrap{
         display: none;
     }
     #m_mgnb_wrap{
         display: block;
+        position: fixed;
+        top: -18vw;
+        right: 20px;
+        width: 21vw;
+        height: 30vw;
+        overflow: hidden;
+        transition: 0.4s;
     }
-}
-/* Tablet End */
-
-/* Mobile 768px ~ 1259px */
-@media all and (max-width: 767px){
-    
+    #m_mgnb_wrap.m_gnb_active{
+        top: 4vw;
+    }
+    #m_mgnb_wrap>button{
+        position: absolute;
+        bottom: -0px;
+        left: 0px;
+        width: 100%;
+        height: 7vw;
+        line-height: 7vw;
+        padding: 0px 20% 0px 0px;
+        border: none;
+        box-sizing: border-box;
+        background: transparent url(../img/common/menu_roll.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+    }
+    #m_mgnb_wrap>ul{
+        position: absolute;
+        top: 20vw;
+        right: 0px;
+        width: 85%;
+        height: 90%;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #fff;
+        transition: 0.4s;
+        opacity: 0;
+    }
+    #m_mgnb_wrap>ul.m_gnb_active{
+        top: 0px;
+        opacity: 1;
+    }
+    #m_mgnb_wrap>ul>li{
+        height: 20%;
+        line-height: calc((20vw - 4px)/5);
+        margin: 2.5% 0px;
+    }
+    #m_mgnb_wrap>ul>li>a{
+        transition: 0.4s;
+    }
+    #m_mgnb_wrap>ul>li.m_gnb_active>a{
+        color: #e9a38b;
+    }
 }
 /* Mobile End */

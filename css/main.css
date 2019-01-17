@@ -94,19 +94,15 @@
 .m_home_con{
     top: 230px;
     right: 40px;
-    width: 546px;
-    height: 253px;
-    background: url(../img/main/home.png) no-repeat;
-    background-size: cover;
 }
-.m_home_con>img{
+.m_home_con>img:nth-of-type(2){
     z-index: -1;
     position: absolute;
     top: 40px;
     left: 265px;
-    animation: homeconani 0.4s ease-out 3.2s forwards;
+    animation: homeani 0.4s ease-out 3.2s forwards;
 }
-@keyframes homeconani{
+@keyframes homeani{
     100%{
         top: -100px;
     }
@@ -120,7 +116,7 @@
 .m_profile_title{
     position: absolute;
     top: 130px;
-    left: 200px;
+    right: 340px;
     width: 726px;
     height: 144px;
     background: url(../img/main/profile.png) no-repeat;
@@ -213,7 +209,7 @@
     position: relative;
     padding-left: 30px;
 }
-.m_slider_page2 span, .m_slider_page3 span{
+.m_slider_page2 strong, .m_slider_page3 strong{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -223,6 +219,9 @@
     margin-top: 5px;
     text-align: center;
 }
+.m_slider_page3>div>p:last-child, .m_slider_page4>div:last-child>p:last-child{
+    margin-bottom: 0px;
+}
 .m_slider_page3 a, .m_slider_page3 button{
     display: inline-block;
     padding: 0px 10px;
@@ -230,6 +229,27 @@
     margin-top: 5px;
     background-color: #fff;
     transition: 0.3s;
+}
+.m_slider_page3>div>p:nth-of-type(1)>span{
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    right: 45px;
+    padding: 10px;
+    background-color: #e9a38b;
+    border-radius: 10px;
+    color: #fff;
+}
+.m_slider_page3>div>p:nth-of-type(1)>span:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -14px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/main/left_arrow_p.png)no-repeat;
+    background-size: contain;
 }
 .m_slider_page3 button:hover, .m_slider_page3 button:focus{
     color: #e9a38b;
@@ -271,6 +291,9 @@
     position: absolute;
     bottom: -47px;
     right: 0px;
+    padding: 2px 5px;
+    border: 3px solid #000;
+    background-color: #fff;
 }
 
 /* Ability */
@@ -309,7 +332,7 @@
 }
 .m_camera>div{
     position: absolute;
-    top: 128px;
+    top: 82%;
     left: 50%;
     transform: translateX(-50%);
     width: 150px;
@@ -320,7 +343,7 @@
 }
 .m_camera_film{
     position: absolute;
-    top: -180px;
+    top: -110%;
     left: 0px;
     width: 150px;
     height: 170px;
@@ -481,6 +504,7 @@
 }
 .m_pm_box{
     position: relative;
+    height: 100%;
 }
 .m_pm_box>div{
     display: none;
