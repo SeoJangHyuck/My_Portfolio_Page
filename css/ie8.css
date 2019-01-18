@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* Base */
+body{
+    font-size: 18px;
+}
+
+/* Header */
+.m_logo>a>span:nth-of-type(1){
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/common/logo.png) no-repeat;
+}
+
+/* Home */
+.m_roadsign>div>h3{
+    top: 40px;
+    font-weight: bold;
+}
+
+/* Profile */
+.m_profile_modal>div:nth-of-type(1){
+    margin-top: -250px;
+    margin-left: -273px;
+}
+.m_profile_modal>div:nth-of-type(2){
+    margin-top: -250px;
+    margin-left: -375px;
+}
+
+/* Ability */
+.m_camera>h3{
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+.m_camera>div{
+    margin-left: -75px;
+}
+
+/* Portfolio */
+.m_portfolio_dish>h3{
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+.m_portfolio_dish>ul{
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+.m_pm_box>div>h3{
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}

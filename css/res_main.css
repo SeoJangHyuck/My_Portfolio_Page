@@ -61,7 +61,7 @@
         top: 4vw;
         left: 48%;
         width: 9vw;
-        animation-delay: 0.4s;
+        animation-delay: 0.8s;
     }
     @keyframes homeani{
         100%{
@@ -386,7 +386,7 @@
         transform: translateX(-50%);
         width: 15vw;
         opacity: 0;
-        animation-delay: 0.4s;
+        animation-delay: 0.8s;
     }
     @keyframes homeani{
         100%{
@@ -525,7 +525,7 @@
         margin-right: 10vw;
     }
     .m_camera>h3{
-        top: 49%;
+        top: 47%;
         font-size: 3.2vw;
     }
     .m_camera>div{
@@ -608,7 +608,7 @@
         border: 3px solid #000;
     }
     .m_pm_box>div>h3{
-        top: -5vh;
+        top: -5.5vh;
         width: 100%;
         text-align: center;
         font-size: 5.2vw;
@@ -637,17 +637,16 @@
         width: 50%;
     }
     .m_pm_tp>.m_pm_img>img:nth-of-type(3){
-        position: absolute;
-        top: 70%;
-        left: 50%;
+        position: static;
         transform: translateX(-50%);
     }
-    .m_pm_con{
+    .m_pm_box>div>.m_pm_con{
+        float: right;
         width: 50%;
         padding-left: 2vw;
     }
     .m_pm_con>div{
-        margin: 1.5vh 0px;
+        margin: 1vh 0px;
     }
     .m_portfolio_modal h4{
         margin-bottom: 0.5vh;
@@ -661,21 +660,13 @@
         margin-right: 0px;
     }
     .m_pm_content{
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        width: calc(50% - 10px);
-    }
-    .m_pm_content>div:nth-of-type(1)>p{
-        line-height: 4.8vw;
+        width: 50%;
+        padding-top: 2vh;
     }
     .m_pm_content>div:nth-of-type(n){
         width: 100%;
     }
     .m_pm_content>.m_pm_url{
-        padding-top: 2vh;
-    }
-    .m_pm_tp>.m_pm_content>.m_pm_url{
         padding-top: 1vh;
     }
     .m_pm_url>span{
@@ -689,7 +680,7 @@
         margin: 0px 0px 0.5vh;
     }
     .m_pm_box>div>button{
-        top: -6vh;
+        top: -6.5vh;
         right: 10px;
         width: 8vw;
         height: 8vw;
@@ -698,6 +689,30 @@
 
     /* Horizontal Mode */
     @media all and (max-height: 414px){
+        /* Base */
+        body{
+            font-size: 2.8vw;
+            line-height: 3.2vw;
+        }
+
+        /* Header */
+        #m_hd{
+            padding-top: 2vw;
+        }
+        .m_logo>a{
+            height: 9vw;
+        }
+        .m_logo>a>span{
+            line-height: 9vw;
+            font-size: 3.2vw;
+        }
+        #m_mgnb_wrap{
+            top: -26vw;
+        }
+        #m_mgnb_wrap.m_gnb_active{
+            top: 4vw;
+        }
+
         /* Home */
         .m_roadsign>div>h3>br{
             display: none;
@@ -719,6 +734,9 @@
         }
         .m_profile_title>img{
             width: 9vw;
+        }
+        .m_slider p{
+            line-height: 3.8vw;
         }
         .m_slider>li>:nth-child(n){
             padding: 0px 1vw;
@@ -759,6 +777,104 @@
         .bx-wrapper .bx-controls-direction a{
             top: 50%;
             transform: translateY(-50%);
+        }
+        .bx-wrapper .bx-pager{
+            display: none;
+        }
+
+        /* Ability */
+        .m_ability_box>img{
+            display: none;
+        }
+        .m_camera:nth-of-type(n){
+            margin: 0px;
+            background-image: none;
+        }
+        .m_camera>div{
+            top: 0px;
+        }
+        .m_camera_film{
+            top: 0px;
+            width: 18vw;
+            height: 14vw;
+            padding: 1vw;
+        }
+        .m_camera_film.m_ability_active{
+            top: 0px;
+        }
+        .m_camera_film>div{
+            height: 8vw;
+            padding-top: 1vw;
+        }
+        .m_camera_film>div>img{
+            height: 6vw;
+        }
+        .m_camera_film>p{
+            margin-top: 0.3vw;
+            font-size: 3.2vw;
+        }
+
+        /* Portfolio */
+        .m_portfolio_box{
+            transform: translateY(-3%);
+        }
+        .m_portfolio_box>div.m_portfolio_dish{
+            height: 84vh;
+            background-position: center center;
+        }
+        .m_portfolio_dish>h3{
+            position: absolute;
+            top: 17%;
+            font-size: 3.6vw;
+        }
+        .m_portfolio_dish>ul{
+            top: 30%;
+            line-height: 4.8vw;
+            font-size: 3.2vw;
+        }
+        .m_portfolio_dish>img{
+            display: none;
+        }
+        .m_portfolio_box>img:nth-of-type(1){
+            bottom: 5%;
+            left: 18%;
+            width: 4.5vw;
+        }
+        .m_portfolio_box>img:nth-of-type(2){
+            z-index: 9960;
+            bottom: 5%;
+            right: 20%;
+            width: 4vw;
+        }
+        .m_portfolio_box>img:nth-of-type(3){
+            z-index: 0;
+            bottom: 0px;
+            right: 20%;
+            width: 12vw;
+        }
+        .m_pm_box{
+            font-size: 2.4vw;
+        }
+        .m_pm_box>div{
+            top: 48%;
+        }
+        .m_pm_box>div>h3{
+            font-size: 3.2vw;
+            top: -7vh;
+        }
+        .m_pm_box>div>button{
+            width: 6vw;
+            height: 6vw;
+            top: 10px;
+        }
+        .m_pm_img{
+            display: none;
+        }
+        .m_pm_con>div:nth-of-type(3), .m_pm_con>div:nth-of-type(5){
+            display: none;
+        }
+        .m_pm_content{
+            padding-top: 0px;
         }
     }
 }

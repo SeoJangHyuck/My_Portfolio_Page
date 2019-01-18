@@ -28,10 +28,10 @@
     #m_mgnb_wrap{
         display: block;
         position: fixed;
-        top: -11vw;
+        top: -15vw;
         right: 20px;
         width: 15vw;
-        height: 20vw;
+        height: 24vw;
         overflow: hidden;
         transition: 0.4s;
     }
@@ -55,7 +55,7 @@
     }
     #m_mgnb_wrap>ul{
         position: absolute;
-        top: 20vw;
+        top: 21vw;
         right: 0px;
         width: 85%;
         height: 90%;
@@ -68,7 +68,7 @@
         opacity: 0;
     }
     #m_mgnb_wrap>ul.m_gnb_active{
-        top: 0px;
+        top: 1vw;
         opacity: 1;
     }
     #m_mgnb_wrap>ul>li{
@@ -93,6 +93,7 @@
     }
     body{
         font-size: 3.6vw;
+        line-height: 4.8vw;
     }
     .section{
         padding: 0px 10px;
@@ -117,15 +118,15 @@
     #m_mgnb_wrap{
         display: block;
         position: fixed;
-        top: -18vw;
+        top: -24vw;
         right: 20px;
         width: 21vw;
-        height: 30vw;
+        height: 36vw;
         overflow: hidden;
         transition: 0.4s;
     }
     #m_mgnb_wrap.m_gnb_active{
-        top: 4vw;
+        top: 6vw;
     }
     #m_mgnb_wrap>button{
         position: absolute;
@@ -144,7 +145,7 @@
     }
     #m_mgnb_wrap>ul{
         position: absolute;
-        top: 20vw;
+        top: 30vw;
         right: 0px;
         width: 85%;
         height: 90%;
@@ -157,13 +158,13 @@
         opacity: 0;
     }
     #m_mgnb_wrap>ul.m_gnb_active{
-        top: 0px;
+        top: 2vw;
         opacity: 1;
     }
     #m_mgnb_wrap>ul>li{
-        height: 20%;
+        height: 11%;
         line-height: calc((20vw - 4px)/5);
-        margin: 2.5% 0px;
+        padding: 7% 0px;
     }
     #m_mgnb_wrap>ul>li>a{
         transition: 0.4s;
