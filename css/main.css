@@ -248,7 +248,7 @@
     left: -14px;
     width: 20px;
     height: 20px;
-    background: url(../img/main/left_arrow_p.png)no-repeat;
+    background: url(../img/main/left_arrow_p.png) no-repeat;
     background-size: contain;
 }
 .m_slider_page3 button:hover, .m_slider_page3 button:focus{
@@ -438,6 +438,27 @@
     transform: translateX(-50%);
     line-height: 40px;
     font-size: 28px;
+}
+.m_portfolio_dish>ul>li:last-child{
+    position: absolute;
+    top: -45px;
+    right: -30px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    background-color: #e9a38b;
+    color: #fff;
+}
+.m_portfolio_dish>ul>li:last-child:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: -4px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(60deg);
+    background: url(../img/main/left_arrow_p.png) no-repeat;
+    background-size: contain;
 }
 .m_portfolio_dish>img{
     position: absolute;
