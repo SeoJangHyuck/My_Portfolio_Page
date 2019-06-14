@@ -43,7 +43,8 @@ $(function(){
     $(".m_slider").bxSlider({
         maxSlides: 3,
         minSlides: 1,
-        moveSlides: 1
+        moveSlides: 1,
+        touchEnabled : (navigator.maxTouchPoints > 0)
     });
 
     // Profile
