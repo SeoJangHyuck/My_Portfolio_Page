@@ -129,6 +129,9 @@
     .m_slider_page4>div:nth-of-type(1)>img{
         width: 20vw;
     }
+    .m_slider_page3>div>p:nth-of-type(1)>span{
+        right: -9999px;
+    }
     .m_slider_page2>div:nth-of-type(2)>p, .m_slider_page3>div:nth-of-type(1)>p{
         padding-left: 3vw;
     }
@@ -468,11 +471,11 @@
         width: 35vw;
         padding-top: 2vh;
     }
+    .m_slider_page3>div>p:nth-of-type(1)>span{
+        right: -9999px;
+    }
     .m_slider_page2>div:nth-of-type(2)>p, .m_slider_page3>div:nth-of-type(1)>p{
         padding-left: 5vw;
-    }
-    .m_slider_page3 a{
-        display: none;
     }
     .m_slider_page2 em, .m_slider_page3 em, .m_slider_page3 button{
         margin-top: 0.5vh;
