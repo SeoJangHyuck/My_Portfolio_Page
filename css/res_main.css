@@ -250,7 +250,7 @@
         bottom: 5%;
         left: 15%;
         width: 8vw;
-        transform: rotateZ(30deg);
+        transform: rotateZ(15deg);
     }
     .m_portfolio_box>img:nth-of-type(2){
         z-index: 9960;
